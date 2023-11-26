@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --color-primary:#6c63ff;
+    --color-success:#00bf8e;
+    --color-warning:#f7c94b;
+    --color-danger:#f75842;
+    --color-danger-varient:rgba(247, 88, 66, 0.4);
+    --color-white:#ffffff;
+    --color-light:rgba(255, 255, 255, 0.7);
+    --color-black:#000;
+    --color-bg:#1f2641;   
+    --color-bg1:#2e3267;   
+    --color-bg2:#424890;   
+
+
+    --container-width-lg:76%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+
+    --transition: all 400ms ease;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: var(--color-white);
+    background: var(--color-bg);
+}
+
+
+.container3{
+    height: 100vh;
+    width: 100vw;
+    background: hsl(218, 23%, 21%);
+    overflow: hidden;
+}
+
+.header{
+    width: 1400px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    padding-top: 30px;
+    
+    
+}
+
+.logo span{
+    color: #e0fbfc;
+}
+
+.nav-links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 50px;
+}
+
+.nav-links ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #e0fbfc;
+    transition: 0.4s;
+}
+
+.nav-links ul li a:hover{
+    color: #98c1d9;
+    font-size: 25px;
+}
+
+.btn{
+    padding: 10px 20px;
+    color: #e0fbfc;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    background: #3d5a80;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 4px, 
+    rgba(0, 0, 0, 0.4) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+.btn-primary{
+    margin-left: 100px;
+    color: #3d5a80;
+    background: #e0fbfc;
+}
+
+.btn:hover{
+    scale: 105%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.main-content{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    position: relative;
+    width: 1400px;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line{
+    width: 80px;
+    border-bottom: 8px solid #ee6c4d;
+    margin-bottom: 30px;
+}
+
+.main h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #98c1d9;
+    line-height: 1;
+}
+
+.main h2{
+   font-size: 40px; 
+   color: #98c1d9;
+   margin-bottom: 50px;
+}
+
+.main span{
+    color: #ee6c4d;
+}
+
+.main p{
+    width: 800px;
+    font-size: 18px;
+    color: #e0fbfc;
+    margin-bottom: 30px;
+    letter-spacing: 0.05em;
+}
+
+.right{
+     position: relative; 
+}
+
+.image{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 50px solid #ee6c4d;
+    z-index: 8888;
+    animation: anim 3s linear infinite;
+}
+
+@keyframes anim{
+    0%{
+        top: 0;
+    }
+    50%{
+        top: -10px;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+.image img{
+    margin-top: -79px;
+    margin-left: 5px;
+    width: 100%;
+    scale: 140%;
+}
+
+/* ======================== about ================================ */
+
+
+
+/* ======================== about ================================ */
+/* ======================== faqs ================================ */
+
+.faqs__container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+#sec1{
+    padding: 6rem 0;
+}
+
+#FAQ{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+
+
+#FAQ{
+    font-size: 2.4rem;
+}
+
+.faqs{
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.faqs__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.faq{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: var(--color-primary);
+    cursor: pointer;
+}
+
+.faq h4{
+    font-size: 1rem;
+    line-height: 2.2rem;
+}
+
+.faq__icon{
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+
+.faq p{
+    margin-top: 0.8rem;
+    display: none;
+}
+
+.faq.open p{
+    display: block;
+}
+
+/* ======================== faqs ================================ */
+
+
+
+
+
+/* ======================== footer ================================ */
+
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.container1{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col .social-links1 a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links1 a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+
